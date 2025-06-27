@@ -10,6 +10,7 @@ import Home from '../Screen/Home/Home';
 
 export type StackParams = {
   CartScreen: undefined;
+  Home: undefined;
 };
 
 const Stack = createNativeStackNavigator<StackParams>();

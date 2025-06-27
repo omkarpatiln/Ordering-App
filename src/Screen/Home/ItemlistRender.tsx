@@ -1,8 +1,13 @@
 import { View, Text,  Image, TouchableOpacity, StyleSheet } from 'react-native'
 import React, { useState } from 'react'
 
+interface Props{
+  item:any;
+  onAddCart:()=>void;
+  onRemoveCart:()=>void;
+}
 
-const ItemlistRender = ({item,onAddCart,onRemoveCart}) => {
+const ItemlistRender:React.FC<Props> = ({item,onAddCart,onRemoveCart}) => {
 
     const [count,setCont]=useState(item.cartCount?item.cartCount:0)
 

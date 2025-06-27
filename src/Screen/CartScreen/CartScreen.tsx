@@ -22,11 +22,9 @@ const CartScreen = () => {
         <ItemlistRender onAddCart={(count)=>{
     dispatch(addProduct({...item,cartCount:count}));
 
-          setCartCount(cartCount+1)
         }} onRemoveCart={()=>{
               dispatch(removeProduct(item.id));
 
-          setCartCount(cartCount-1)
 
         }} item={item}/>
       )}

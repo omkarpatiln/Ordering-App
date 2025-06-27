@@ -4,6 +4,7 @@ import { Cart } from '../assets/Images'
 interface Props{
     HeaderCount:number,
     onCartClick:()=>void;
+    showCart:boolean
 }
 
 const Header:React.FC<Props> = ({HeaderCount,onCartClick,showCart}) => {
