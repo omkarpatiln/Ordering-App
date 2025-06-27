@@ -1,0 +1,1 @@
+export const Cart = require('../Images/cart.png')
