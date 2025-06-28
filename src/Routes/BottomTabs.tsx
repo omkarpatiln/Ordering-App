@@ -48,9 +48,7 @@ const MyTabs=()=> {
               <Icon
                name='home' size={25} type='FontAwesome' color={focused?Colors.Primary:Colors.black}
               />
-              {/* <Icon name='MaterialDesignIcons' type='MaterialCommunityIcons' color={Colors.Primary}/>
-              <Icon name='notifications' type='Ionicons' color={Colors.Primary}/>
-              <Icon  name='user' type='EvilIcons' color={Colors.Primary}/> */}
+          
             </View>
           ),
         }} name="Home" component={Home} />
