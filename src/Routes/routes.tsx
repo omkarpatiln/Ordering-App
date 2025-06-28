@@ -4,13 +4,14 @@ import {
   createNativeStackNavigator,
   NativeStackScreenProps,
 } from '@react-navigation/native-stack';
-import CartScreen from '../Screen/CartScreen/CartScreen';
 import Home from '../Screen/Home/Home';
+import Orders from '../Screen/Orders/Orders';
 
 
 export type StackParams = {
   CartScreen: undefined;
   Home: undefined;
+  Orders:undefined;
 };
 
 const Stack = createNativeStackNavigator<StackParams>();
@@ -28,8 +29,8 @@ const Routes = () => {
 
       >
                 <Stack.Screen name="Home" component={Home} />
+                
 
-        <Stack.Screen name="CartScreen" component={CartScreen} />
       </Stack.Navigator>
   );
 };
